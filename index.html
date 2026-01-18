@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abdelrhman Fahmy — Heritage Science & Archaeology</title>
+  <meta name="description" content="Abdelrhman Fahmy — heritage scientist and archaeologist. Research in archaeological science, conservation, and cultural heritage." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Abdelrhman Fahmy</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Hi, I’m <span id="hero-name">Abdelrhman Fahmy</span>.</h1>
+        <p class="tagline" id="hero-tagline">Heritage scientist & archaeologist — researching and conserving cultural heritage using scientific methods.</p>
+        <p class="cta">
+          <a class="btn" href="#research">Explore my research</a>
+          <a class="btn ghost" href="#contact">Contact me</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="research" class="section research">
+      <div class="container">
+        <h2>Research</h2>
+
+        <div class="research-overview">
+          <p>
+            My research focuses on the application of scientific methods to archaeology and conservation:
+            materials analysis, dating techniques, conservation science, and heritage management.
+            I combine fieldwork with laboratory analysis to document and preserve cultural materials.
+          </p>
+        </div>
+
+        <div class="research-sub">
+          <div class="research-column">
+            <h3>Selected Publications</h3>
+            <div id="publications-container">
+              <!-- Publications will be loaded from publications.json -->
+              <p class="hint">Loading publications…</p>
+            </div>
+            <p class="hint">To auto-fill publications from your ORCID/Google Scholar/ORCID export, provide the link or export file.</p>
+          </div>
+
+          <div class="research-column">
+            <h3>Ongoing Projects</h3>
+            <div class="research-grid" id="research-grid">
+              <article class="card">
+                <h4>Site Conservation Pilot — Region X</h4>
+                <p>Assessing deterioration mechanisms at a historic site and trialing conservation treatments. <a href="#" target="_blank" rel="noopener">Details</a></p>
+              </article>
+
+              <article class="card">
+                <h4>Material Provenance Study</h4>
+                <p>Using compositional analysis to trace raw material sources for archaeological ceramics. <a href="#" target="_blank" rel="noopener">Details</a></p>
+              </article>
+            </div>
+
+            <h3 class="mt">Methods & Techniques</h3>
+            <ul class="methods-list">
+              <li>Microscopy (optical, SEM)</li>
+              <li>Spectroscopy (FTIR, Raman, XRF)</li>
+              <li>Radiocarbon and other dating methods</li>
+              <li>Environmental monitoring and conservation diagnostics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid" id="projects-grid">
+          <!-- Replace or add project cards -->
+          <article class="card">
+            <h3>Project Title Placeholder</h3>
+            <p>Short description of the project. Replace this card with your project details and links. <a href="#" target="_blank" rel="noopener">View</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About</h2>
+        <p id="about-bio">
+          I am a heritage scientist and archaeologist with a focus on archaeological science, conservation, and cultural heritage research.
+          My work combines field archaeology, laboratory analysis, and conservation practice to document, investigate, and preserve archaeological materials and historic environments.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a id="contact-email" href="mailto:you@example.com">you@example.com</a></p>
+        <p>Connect:
+          <a href="#" id="github-link" target="_blank" rel="noopener">GitHub</a> ·
+          <a href="#" id="linkedin-link" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="#" id="researchgate-link" target="_blank" rel="noopener">ResearchGate</a>
+        </p>
+
+        <form id="contact-form" class="contact-form" onsubmit="submitContact(event)">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" required></textarea>
+          </label>
+          <div>
+            <button class="btn" type="submit">Send</button>
+            <small class="hint">This form opens your email client by default — configure a backend or a form service to receive messages directly.</small>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="copyright-year"></span> Abdelrhman Fahmy. Built with care.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
